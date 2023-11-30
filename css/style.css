@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+}
 /* Styl dla nagłówka strony */
 h1 {
     color: #333;
