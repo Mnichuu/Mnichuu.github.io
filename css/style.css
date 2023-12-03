@@ -10,7 +10,6 @@ header {
     text-align: center;
     background: #333;
     color: white;
-    padding: 1rem;
     width: 100%;
 }
 
@@ -24,12 +23,10 @@ main {
     display: flex;
     justify-content: space-around;
     background: #f0f0f0;
-    padding: 1rem;
 }
 
 .nav-tabs ul {
     list-style: none;
-    padding: 0;
 }
 
 .nav-tabs li {
@@ -56,6 +53,5 @@ footer {
     text-align: center;
     left: 0;
     bottom: 0;
-    width: 100%;
 }
 
