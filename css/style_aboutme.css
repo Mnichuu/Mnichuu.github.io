@@ -1,0 +1,23 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: white;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Dodaj tę linijkę, aby zablokować przewijanie strony */
+}
+
+h2 {
+    color: blue;
+}
+
+p {
+    margin: 20px 0;
+}
+
+img {
+    height: auto; /* Automatyczne dostosowanie wysokości proporcjonalnie do szerokości */
+    max-width: 100%; /* Ustala maksymalną szerokość obrazu na 100%, aby nie przekraczał oryginalnej szerokości */
+}
+
