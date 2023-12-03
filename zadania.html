@@ -3,25 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mój projekt 1 WWW</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Strona z Zadaniami</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-<main>
-    <nav class="nav-tabs">
-        <ul>
-            <li><a href="index.html">O mnie!</a></li>
-            <li><a href="zainteresowania.html">Zainteresowania</a></li>
-            <li><a href="zadania.html">Zadania</a></li>
-        </ul>
-    </nav>
-    <iframe src="zadania.html" frameborder="0" width="100%" height="700"></iframe>
-</main>
 
+<h2>Wybierz zadanie:</h2>
 
-<div id="footer-container"></div>
+<table>
+    <tr>
+        <td><button onclick="location.href='fib.html'">Fibonacci</button></td>
+        <td><button onclick="location.href='kalkulator.html'">Kalkulator</button></td>
+        <td><button onclick="location.href='kolory.html'">Kolory</button></td>
+    </tr>
+</table>
 
-<script src="js/footer.js"></script>
-<script src="js/script.js"></script>
 </body>
 </html>

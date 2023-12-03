@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciąg Fibonacciego</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+        }
+
+        input, button {
+          padding: 10px;
+          margin: 5px;
+          font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Ciąg Fibonacciego</h2>
+
+<label for="n">Podaj wartość N:</label>
+<input type="text" id="n" placeholder="Wprowadź liczbę">
+
+<br>
+
+<button onclick="calculateFibonacci()">Oblicz N-ty element</button>
+
+<br>
+
+<h3>Wynik: <span id="fibonacciResult">0</span></h3>
+
+<script>
+  function calculateFibonacci() {
+    const n = parseInt(document.getElementById("n").value);
+
+    if (!isNaN(n) && n >= 0) {
+      document.getElementById("fibonacciResult").innerText = fibonacci(n);
+    } else {
+      alert("Wprowadź poprawną nieujemną liczbę całkowitą.");
+    }
+  }
+
+  function fibonacci(n) {
+    if (n === 0) {
+      return 0;
+    } else if (n === 1) {
+      return 1;
+    } else {
+      let a = 0, b = 1, temp;
+      for (let i = 2; i <= n; i++) {
+        temp = a + b;
+        a = b;
+        b = temp;
+      }
+      return b;
+    }
+  }
+</script>
+
+</body>
+</html>
