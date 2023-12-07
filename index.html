@@ -12,21 +12,28 @@
 </header>
 
 <main>
+    <!-- Nawigacja strony za pomocą zakładek -->
     <nav class="nav-tabs">
         <ul>
+            <!-- Przycisk "O mnie" wywołuje funkcję loadPage z parametrem 'aboutme.html' -->
             <li><a href="#" onclick="loadPage('aboutme.html')">O mnie!</a></li>
+            <!-- Przycisk "Zainteresowania" wywołuje funkcję loadPage z parametrem 'zainteresowania.html' -->
             <li><a href="#" onclick="loadPage('zainteresowania.html')">Zainteresowania</a></li>
+            <!-- Przycisk "Zadania" wywołuje funkcję loadPage z parametrem 'zadania.html' -->
             <li><a href="#" onclick="loadPage('zadania.html')">Zadania</a></li>
         </ul>
     </nav>
-    <iframe id="contentFrame" frameborder="0" width="100%" height="2500px"></iframe>
 
+    <!-- Ramka, w której wczytywane są zawartości podstron -->
+    <iframe id="contentFrame" frameborder="0" width="100%" height="2500px"></iframe>
 </main>
 
-
+<!-- Stopka strony -->
 <div id="footer-container"></div>
 
+<!-- Wczytanie skryptu dla stopki -->
 <script src="js/footer.js"></script>
+<!-- Wczytanie skryptu dla ogólnej funkcjonalności strony -->
 <script src="js/script.js"></script>
 </body>
 </html>

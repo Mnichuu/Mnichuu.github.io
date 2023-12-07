@@ -1,57 +1,55 @@
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    width: 100%;
+    display: flex; /* Ustawienie rodzica (body) na kontener flexbox */
+    flex-direction: column; /* Ustawienie układu flexbox na kolumnowy */
+    min-height: 100vh; /* Minimalna wysokość kontenera na 100% widoku okna przeglądarki */
+    margin: 0; /* Usunięcie domyślnych marginesów */
 }
 
 header {
-    text-align: center;
-    background: #333;
-    color: white;
-    width: 100%;
+    text-align: center; /* Wyśrodkowanie tekstu w nagłówku */
+    background: #333; /* Kolor tła nagłówka */
+    color: white; /* Kolor tekstu w nagłówku */
+    width: 100%; /* Nagłówek zajmuje 100% szerokości kontenera */
 }
 
 main {
-    width: 100%;
-    flex: 1;
+    width: 100%; /* Główna sekcja zajmuje 100% szerokości kontenera */
+    flex: 1; /* Rozciąganie głównej sekcji, aby zajęła dostępną przestrzeń */
 }
 
+/*Panel górny*/
 .nav-tabs {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    background: #f0f0f0;
+    width: 100%; /* Nawigacja zajmuje 100% szerokości kontenera */
+    display: flex; /* Ustawienie nawigacji na kontener flexbox */
+    justify-content: space-around; /* Rozmieszczenie elementów nawigacji równomiernie wokół osi poziomej */
+    background: #f0f0f0; /* Kolor tła nawigacji */
 }
 
 .nav-tabs ul {
-    list-style: none;
+    list-style: none; /* Usunięcie domyślnej stylizacji listy */
 }
 
 .nav-tabs li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Dodanie marginesu na dole dla elementów listy nawigacji */
 }
 
 .nav-tabs a {
-    text-decoration: none;
-    color: #333;
+    text-decoration: none; /* Usunięcie podkreślenia z linków nawigacji */
+    color: #333; /* Kolor tekstu linków nawigacji */
 }
 
 .footer-icon {
-    width: 25px;
-    height: 25px;
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+    width: 25px; /* Szerokość ikony w stopce */
+    height: 25px; /* Wysokość ikony w stopce */
+    color: white; /* Kolor ikon w stopce */
+    text-decoration: none; /* Usunięcie podkreślenia z ikon w stopce */
+    margin: 0 10px; /* Dodanie odstępu poziomego między ikonami w stopce */
 }
 
 footer {
-    background: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    left: 0;
-    bottom: 0;
+    background: #333; /* Kolor tła stopki */
+    color: white; /* Kolor tekstu w stopce */
+    padding: 20px; /* Wewnętrzny odstęp stopki */
+    text-align: center; /* Wyśrodkowanie tekstu w stopce */
+    bottom: 0; /* Umieszczenie stopki na dole */
 }
-
